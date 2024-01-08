@@ -241,8 +241,7 @@ const Comentarios = () => {
 
                   <div className="row m-0">
                   <div className="input-field col s10 ">
-                      <i className="material-icons prefix">mode_edit</i>
-                      <textarea id="comentarioUsuario" className="materialize-textarea border "  maxLength="222"  required onChange={handleInputChange} name="comentarioUsuario" value={comentario.comentarioUsuario} data-length="222"></textarea>
+                      <textarea id="comentarioUsuario" className="materialize-textarea "  maxLength="222"  required onChange={handleInputChange} name="comentarioUsuario" value={comentario.comentarioUsuario} data-length="222"></textarea>
                       <label htmlFor="comentarioUsuario" className="fs-6">Comentario *</label>
                       <span className="helper-text" data-error="Inválido" data-success="Válido">222 caractéres máximo</span>
                   </div>

@@ -136,10 +136,10 @@ const Contacto = () => {
 
   return (
   <>
-  <div className="container col-md-6  mb-5 mt-3 shadow-lg border border-3  rounded p-5">
-  <h2 className="text-center mt-3  fw-normal p-2 shadow-lg rounded-pill">Contacto</h2>
+  <div className="container col-md-6  mb-3 mt-2 shadow border border-0  rounded p-5">
+  <h2 className="text-center mt-3  fw-normal p-2 shadow-lg rounded-pill">Escribe un email</h2>
     <div className="row">
-      <form className="col s12 mt-5" onSubmit={enviarDatos}>
+      <form className="col s10 mt-3" onSubmit={enviarDatos}>
 
         <div className="row">
           <div className="input-field col s6">

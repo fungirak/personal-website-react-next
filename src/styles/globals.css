@@ -210,3 +210,14 @@ body::-webkit-scrollbar-thumb {
 /* nuevo css update migracion */
 
 
+.burbuja-flotante {
+  position: relative;
+  top: 10px; /* Ajusta la posición superior según sea necesario */
+  right: 35px; /* Ajusta la posición derecha según sea necesario */
+  width: 40px; /* Ajusta el ancho según sea necesario */
+  height: 40px; /* Ajusta la altura según sea necesario */
+  z-index: 81;
+  border-radius: 50%;
+  vertical-align: middle; /* Centra verticalmente */
+  border: 1px solid white;
+}

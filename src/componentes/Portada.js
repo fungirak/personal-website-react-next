@@ -29,7 +29,8 @@ const Portada = () => {
 
 
             <div className="d-flex justify-content-center">
-                <img src="/img/fotoPerfil.jpg" alt="" className="foto-perfil ajuste-perfil shadow-lg efecto animate__animated animate__bounceInDown"/>
+                <img src="/img/fotoPerfil.jpg" alt="" className="foto-perfil ajuste-perfil shadow-lg efecto"/>
+                <img src="/img/update/LogoUTN.png" alt="" className="burbuja-flotante shadow efecto animate__animated animate__bounceInDown"/>
             </div>
 
             <div className="d-flex justify-content-center">
@@ -39,7 +40,7 @@ const Portada = () => {
             <div className="mt-2 mb-5 text-center">
                 <h3 className=" text-center fst-normal animate__animated animate__bounceInLeft ">GABRIEL LAZZARINI</h3>
                 <h5 className=" text-center fst-normal animate__animated animate__bounceInRight animate__delay-1s">Desarrollador de Software</h5>
-                <h5 className=" text-center fw-normal  animate__animated animate__fadeIn animate__delay-2s">Estudiante de Tecnicatura Tecnologías de la Información</h5>
+                <h5 className=" text-center fw-normal  animate__animated animate__fadeIn animate__delay-2s">Estudiante de Tecnicatura en Tecnologías de la Información</h5>
                 <h6 className=" text-center fw-lighter animate__animated animate__fadeIn animate__delay-3s">Universidad Tecnológica Nacional</h6>
             </div>
 

@@ -37,7 +37,8 @@ const urlUbuntu = "https://ubuntu.com/";
 const urlWindows = "https://www.microsoft.com/en-us/windows?r=1";
 const urlVisualStudioCode = "https://code.visualstudio.com/";
 const urlGithub = "https://github.com/";
-
+const urlJava = "https://www.java.com/en/download/help/whatis_java.html";
+const urlPHP = "https://www.php.net/";
 
 
 const DescripcionSkills = () => {
@@ -47,16 +48,18 @@ const DescripcionSkills = () => {
 
             <div className="mt-5 mb-5">
                 <div className="row  p-3 d-flex justify-content-center  shadow rounded m-5">
-                    <h5 className="text-center mt-3 fw-light  mb-3">LENGUAJES Y TECNOLOGIAS</h5>
+                    <h6 className="text-center mt-1 fw-light  mb-3">LENGUAJES Y TECNOLOGIAS</h6>
                    
+                    <Logoskills url={urlJava} logo="/img/update/logoJava.png" nombre={'Java'} border={'border-danger'} />
                     <Logoskills url={urlJavascript} logo="/img/logoJs.png" nombre={'JavaScript'} border={'border-warning'} />
                     <Logoskills url={urlTypescript} logo="/img/logoTs.png" nombre={'TypeScript'} border={'border-primary'} />
+                    <Logoskills url={urlPHP} logo="/img/update/logoPHP.svg" nombre={'PHP'} border={'border-primary'} />
                    
 
                 </div>
 
                 <div className="row  p-3  shadow rounded m-5">
-                    <h5 className="text-center mt-3 fw-light  mb-3">STACK MERN JAVASCRIPT</h5>
+                    <h6 className="text-center mt-1 fw-light  mb-3">STACK MERN JAVASCRIPT</h6>
 
                     <Logoskills url={urlMongodb} logo="/img/logoMongodb.svg" nombre={'Mongo DB'}border={'border-success'} />
                     <Logoskills url={urlExpress} logo="/img/logoExpress.svg" nombre={'Express'} border={'border-dark'} />
@@ -66,15 +69,15 @@ const DescripcionSkills = () => {
                 </div>
 
                 <div className="row  p-3 d-flex justify-content-center  shadow rounded m-5">
-                    <h5 className="text-center mt-3 fw-light  mb-3">ANGULAR</h5>
+                    <h6 className="text-center mt-1 fw-light  mb-3">ANGULAR</h6>
 
-                    <Logoskills url={urlAngular} logo="/img/logoAngular.png" nombre={'Angular'} border={'border-danger'} />
+                    <Logoskills url={urlAngular} logo="/img/update/logoAngular.png" nombre={'Angular'} border={'border-danger'} />
 
                 </div>
 
 
                 <div className="row  p-3 d-flex justify-content-center  shadow rounded m-5">
-                    <h5 className="text-center mt-3 fw-light">BASE DE DATOS SQL y NO SQL</h5>
+                    <h6 className="text-center mt-1 fw-light">BASE DE DATOS SQL y NO SQL</h6>
 
                     <Logoskills url={urlMysql} logo="/img/logoMysql.svg" nombre={'MySql'} border={'border-primary'} />
                     <Logoskills url={urlMongodb} logo="/img/logoMongodb.svg" nombre={'Mongo DB'} border={'border-success'} />
@@ -82,7 +85,7 @@ const DescripcionSkills = () => {
                 </div>
 
                 <div className="row  p-3 d-flex justify-content-center  shadow rounded m-5">
-                    <h5 className="text-center mt-3 fw-light  mb-3">CSS</h5>
+                    <h6 className="text-center mt-1 fw-light  mb-3">CSS</h6>
 
                     <Logoskills url={urlCss} logo="/img/logoCss.png" nombre={'CSS 3'} border={'border-primary'} />
                     <Logoskills url={urlBootstrap} logo="/img/logoBootstrap.svg" nombre={'Bootstrap'} border={'border-gray'} />
@@ -92,7 +95,7 @@ const DescripcionSkills = () => {
                 </div>
 
                 <div className="row  p-3 d-flex justify-content-center  shadow rounded m-5">
-                    <h5 className="text-center mt-3 fw-light mb-3">GLOBALES</h5>
+                    <h6 className="text-center mt-1 fw-light mb-3">GLOBALES</h6>
                     
                     <Logoskills url={urlGit} logo="/img/logoGit.svg" nombre={'GIT'} border={'border-danger'} />
                     <Logoskills url={urlGithub} logo="/img/logoGithub.svg" nombre={'Github'} border={'border-dark'} />
