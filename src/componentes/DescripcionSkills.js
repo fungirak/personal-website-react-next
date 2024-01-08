@@ -43,7 +43,7 @@ const urlGithub = "https://github.com/";
 const DescripcionSkills = () => {
     return (
         <div className="container ">
-            <h1 className="text-center fw-normal mt-3 p-2 shadow-lg rounded-pill">Skills</h1>
+            <h2 className="text-center fw-normal mt-3 p-2 shadow-lg rounded-pill">Skills</h2>
 
             <div className="mt-5 mb-5">
                 <div className="row  p-3 d-flex justify-content-center  shadow rounded m-5">

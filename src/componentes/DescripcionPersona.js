@@ -11,42 +11,44 @@ const posicionar = () => {
 
 const DescripcionPersona = () => {
     return (
-        <div className="container mb-5">
-            <h1 className="text-center fw-normal mt-3 p-2 shadow-lg rounded-pill">Acerca de</h1>
+        <div className="container ">
+            <h2 className="text-center fw-normal  p-2 shadow-lg rounded-pill">Acerca de</h2>
 
-            <div className="d-flex justify-content-center shadow rounded  mt-5">
+            <div className="d-flex justify-content-center shadow rounded  mt-2">
                 <div className="row d-flex justify-content-around m-3 efecto">
                     <div className="card col-md-4 m-3 col-sm-8 p-3 rounded border border-success shadow">
                         <div className="card-header d-flex justify-content-center bg-transparent border border-0">
                             <img src="/img/fungi1.jpg" alt="" className="fungi shadow-lg border border-3 border-white efecto" />
                         </div>
                         <div className="card-body">
-                            <p className="text-muted">
-                                Hola! Hago desarrollo de software full-stack de manera autodidacta y curso mis estudios superiores en la ciudad de Santa Fe (Arg.)  <br></br>
-                                Poseo 2 años de experiencia laboral en el área <br />
-                                Actualmente me dedico a mejorar continuamente mis habilidades como desarrollador investigando-estudiando-practicando diversas tecnologías de frontend, backend y bases de datos como:  Java, JavaScript, React js, Next js, Angular, MySQL, MongoDB. 
+                            <p className="text-muted text-center">
+                                Hola! Me dedico al desarrollo de software full-stack de manera autodidacta y curso mis estudios superiores en la ciudad de Santa Fe (Arg.)  <br></br>
+                                Poseo 2 años de experiencia laboral en el área. <br />
+                                Actualmente me dedico a mejorar continuamente mis habilidades como desarrollador investigando-estudiando-practicando diversas tecnologías de frontend, backend y bases de datos como:  Java, JavaScript, React js, Next js, Angular, MySQL, MongoDB y las últimas tendencias sólidas del mercado que sirvan para mejorar-mantener-actualizar proyectos existentes y cumplir con el éxito de los proyectos en los que participo. 
                             </p>
                         </div>
                     </div>
 
                     <div className="card  col-md-4 m-3  col-sm-8  p-3 rounded border border-danger shadow">
-                        <div className="card-header d-flex justify-content-center bg-transparent border border-0">
+                        <div className="card-header d-flex  justify-content-center bg-transparent border border-0">
                             <img src="/img/fungi2.jpg" alt="" className="fungi  shadow-lg border border-3 border-white efecto " />
                         </div>
                         <div className="card-body">
-                            <p className="text-muted">
-                                Este es mi perfil de  Github en donde publico los códigos fuente de mis proyectos personales. 
-                               <a href="https://github.com/fungirak" target="_blank" rel="noopener noreferrer" className="border border-dark  rounded fw-bold text-dark">
-                                   Ver Perfil de Github   
-                                </a><br /><br/>
-                                Si te gusta mi perfil y te interesa contactarme, envíame un mensaje para estar en contacto en mi   
-                                <a href="https://ar.linkedin.com/in/gabriel-lazzarini" target="_blank" rel="noopener noreferrer" className=" border border-primary  rounded fw-bold "> Cuenta de Linkedin </a>
-                                ó en la sección de <b>chat</b>
-                                <div className="mt-3 d-flex justify-content-center">
-                                    <img src="/img/logoContacto.png" alt="..." className="icon-pres efecto" />
-                                </div>
-                               
-                            </p>
+                        <p className="text-muted text-center">
+                            Este es mi perfil de Github en donde publico los códigos fuente de mis proyectos personales. <br />
+                            <a href="https://github.com/fungirak" target="_blank" rel="noopener noreferrer" className="border border-dark rounded fw-bold text-dark">
+                                Ver Perfil de Github
+                            </a><br /><br />
+                            Si te gusta mi perfil y te interesa contactarme, envíame un mensaje para estar en contacto en mi  <br />
+                            <a href="https://ar.linkedin.com/in/gabriel-lazzarini" target="_blank" rel="noopener noreferrer" className="border border-primary rounded fw-bold "> Cuenta de Linkedin </a> <br />
+                            <br /> ó en la sección de <b>chat</b>
+                            <div className="mt-3 d-flex justify-content-center">
+                                <a href="/contacto">
+                                <img src="/img/logoContacto.png" alt="Logo de Contacto" className="icon-pres efecto" />
+                                </a>
+                            </div>
+                        </p>
+
                         </div>
                     </div>
 

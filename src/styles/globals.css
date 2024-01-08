@@ -40,13 +40,13 @@ body::-webkit-scrollbar-thumb {
 
 
 .foto-perfil{
-  height: 14em;
-  width: 14em;
+  height: 12em;
+  width: 12em;
   border-radius: 50%;
   object-fit: cover;
   object-position: 10% 40%;
-  border: 1em solid white;
-  margin: .2em;
+  border: 5px solid white;
+  margin: .1em;
   z-index: 80;
   box-shadow: inset;
 }

@@ -1,6 +1,6 @@
 //import portada from './video/video-liviano.mp4';
 import fotoPerfil from '../../public/img/fotoPerfil.jpg';
-//import logoPoster from './img/logoPoster.png';
+import logoPoster from '../../public/img/logoPoster.png';
 import logoColaboracion from '../../public/img/logoColaboracion.png';
 
 
@@ -11,24 +11,18 @@ const Portada = () => {
     return (
         <div className="d-flex justify-content-center row mb-5">
 
-            {/* 
+            
                 <div>
-                    <video src={portada} poster={logoPoster} alt="" loop autoPlay muted  className="col-md-12 col-sm-12  portada shadow-lg" />
+                    <video src="/video/video-liviano.mp4" poster="/img/logoPoster"  alt="" loop autoPlay muted  className="col-md-12 col-sm-12  portada shadow-lg" />
                 </div> 
-            */}
+            
 
-            <div>
-                <video controls width="600" height="400" loop autoPlay muted  className="col-md-12 col-sm-12  portada shadow-lg">
-                    <source src="/videos/video-liviano.mp4" type="video/mp4" />
-                    Tu navegador no soporta el tag de video.
-                </video>
-            </div>
 
-            <div className="bg-verde d-flex superior justify-content-end p-2 animate__animated animate__fadeIn animate__delay-5s">
-                <h6 className="text-white fw-bold mt-2 font-sm">¡Hacer una Colaboración!</h6>
-                <a href="https://mpago.la/242gBtS" target="_blank" rel="noopener noreferrer" className=" d-flex justify-content-center text-white fw-bold  btn btn-sm ms-4 bg-verde border border-2 border-white rounded">
-                    <img src="/img/logoColaboracion.png" alt="colaborar" className="logoColab me-2" />
-                    <h6 className="mt-1 font-sm"></h6>
+            <div className=" d-flex superior justify-content-end  animate__animated animate__fadeIn animate__delay-5s">
+                <h6 className="text-white fw-bold  font-sm"></h6>
+                <a href="https://mpago.la/242gBtS" target="_blank" rel="noopener noreferrer" alt="Colaborar con el sitio" className=" mt-3 d-flex justify-content-center text-white fw-bold  btn btn-sm ms-4 bg-verde   rounded">
+                    <img src="/img/logoColaboracion.png" alt="colaborar" className="logoColab me-2 " />
+                    <h6 className="font-sm"></h6>
                 </a>
                 <div className="me-3"></div>
             </div>
@@ -42,11 +36,11 @@ const Portada = () => {
            
            
 
-            <div className="mt-2 mb-5">
-                <h2 className=" text-center fst-normal animate__animated animate__bounceInLeft">GABRIEL LAZZARINI</h2>
-                <h4 className=" text-center fst-normal animate__animated animate__bounceInRight animate__delay-1s">Desarrollador de Software</h4>
-                <h4 className=" text-center fw-normal  animate__animated animate__fadeIn animate__delay-2s">Estudiante de Tecnicatura Tecnologías de la Información</h4>
-                <h5 className=" text-center fw-lighter animate__animated animate__fadeIn animate__delay-3s">Universidad Tecnológica Nacional</h5>
+            <div className="mt-2 mb-5 text-center">
+                <h3 className=" text-center fst-normal animate__animated animate__bounceInLeft ">GABRIEL LAZZARINI</h3>
+                <h5 className=" text-center fst-normal animate__animated animate__bounceInRight animate__delay-1s">Desarrollador de Software</h5>
+                <h5 className=" text-center fw-normal  animate__animated animate__fadeIn animate__delay-2s">Estudiante de Tecnicatura Tecnologías de la Información</h5>
+                <h6 className=" text-center fw-lighter animate__animated animate__fadeIn animate__delay-3s">Universidad Tecnológica Nacional</h6>
             </div>
 
             

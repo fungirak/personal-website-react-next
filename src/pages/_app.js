@@ -4,6 +4,10 @@ import '@/styles/globals.css';
 //import '@/styles/Home.module.css';
 //import '@/componentes/css/estilos.css'
 import '@/componentes/materialize/css/materialize.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 // Usamos dynamic para cargar el componente solo en el lado del cliente
 const DynamicApp = dynamic(() => import('../componentes/App'), { ssr: false });

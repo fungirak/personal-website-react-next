@@ -4,12 +4,12 @@ const Politicas = ({banda}) => {
   return <div>
       <>
       <div className="container col-md-10  mb-5 mt-3 shadow-lg border border-3  rounded p-5">
-  <h3 className="text-center mt-3  fw-normal p-2 shadow-lg rounded-pill">POLÍTICA DE PRIVACIDAD</h3>
+  <h4 className="text-center mt-3  fw-normal p-2 shadow-lg rounded-pill">POLÍTICA DE PRIVACIDAD</h4>
     <div className="row mt-3 p-5">
       <p>
-      <h1 className="text-center">POLÍTICA DE PRIVACIDAD DEL SITIO WEB</h1>
-<h2 className="text-center">www.fungirak.com</h2>
-<h3 className="mt-4">I. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h3>
+      <h2 className="text-center">POLÍTICA DE PRIVACIDAD DEL SITIO WEB</h2>
+<h3 className="text-center">www.fungirak.com</h3>
+<h4 className="mt-4">I. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h4>
 <p style={{userSelect: "none"}}>Respetando lo establecido en la legislación vigente, FUNGIRAK WEBSITE (en adelante, también Sitio Web) se compromete a adoptar las medidas técnicas y organizativas necesarias, según el nivel de seguridad adecuado al riesgo de los datos recogidos.
 
 Leyes que incorpora esta política de privacidad:
