@@ -29,9 +29,8 @@ const DescripcionEstudios = () => {
             <div className="mt-3 d-flex justify-content-center row">
                 <h1 className="text-center fw-normal  mb-3 p-2 shadow-lg rounded-pill">Estudios</h1>
                     <div className="mt-2">
-                        <h4 className=" text-center fst-normal">Técnico en Informática</h4>
-                        <h4 className=" text-center fw-normal ">Estudiante de Ingeniería en Informática</h4>
-                        <h5 className=" text-center fw-lighter">Universidad Nacional del Litoral</h5>
+                        <h4 className=" text-center fst-normal">Tecnicatura Universitaria en Tecnologías de la Información</h4>
+                        <h5 className=" text-center fw-lighter">Universidad Tecnológica Nacional</h5>
                     </div>
                 <div className="row d-flex justify-content-center">
                     <h4 className="text-center fw-bold">Cursos Extracurriculares Realizados:</h4>

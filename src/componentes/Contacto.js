@@ -49,7 +49,7 @@ const Contacto = () => {
 
               // Muestra una Alerta de confirmación para enviar el comentario.
       swal({
-        title: "¿Enviar el Correo electrónico?",
+        title: "Confirmar Envío",
         text: "¡FUNGIRAK Agradece tu interés!",
         icon: "success",
         buttons: true,

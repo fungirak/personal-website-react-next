@@ -42,8 +42,8 @@ const Comentarios = () => {
      
       // Muestra una Alerta de confirmación para enviar el comentario.
       swal({
-        title: "¿Enviar el Comentario?",
-        text: "¡FUNGIRAK Agradece tu opinión!",
+        title: "Confirmar Envío",
+        text: "fungirak.com le agradece su comentario",
         icon: "success",
         buttons: true,
       })

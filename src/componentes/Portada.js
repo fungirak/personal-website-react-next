@@ -28,7 +28,7 @@ const Portada = () => {
                 <h6 className="text-white fw-bold mt-2 font-sm">¡Hacer una Colaboración!</h6>
                 <a href="https://mpago.la/242gBtS" target="_blank" rel="noopener noreferrer" className=" d-flex justify-content-center text-white fw-bold  btn btn-sm ms-4 bg-verde border border-2 border-white rounded">
                     <img src="/img/logoColaboracion.png" alt="colaborar" className="logoColab me-2" />
-                    <h6 className="mt-1 font-sm">YO COLABORO</h6>
+                    <h6 className="mt-1 font-sm"></h6>
                 </a>
                 <div className="me-3"></div>
             </div>
@@ -44,9 +44,9 @@ const Portada = () => {
 
             <div className="mt-2 mb-5">
                 <h2 className=" text-center fst-normal animate__animated animate__bounceInLeft">GABRIEL LAZZARINI</h2>
-                <h4 className=" text-center fst-normal animate__animated animate__bounceInRight animate__delay-1s">Programador Full Stack</h4>
-                <h4 className=" text-center fw-normal  animate__animated animate__fadeIn animate__delay-2s">Estudiante de Ingeniería en Informática</h4>
-                <h5 className=" text-center fw-lighter animate__animated animate__fadeIn animate__delay-3s">Universidad Nacional del Litoral</h5>
+                <h4 className=" text-center fst-normal animate__animated animate__bounceInRight animate__delay-1s">Desarrollador de Software</h4>
+                <h4 className=" text-center fw-normal  animate__animated animate__fadeIn animate__delay-2s">Estudiante de Tecnicatura Tecnologías de la Información</h4>
+                <h5 className=" text-center fw-lighter animate__animated animate__fadeIn animate__delay-3s">Universidad Tecnológica Nacional</h5>
             </div>
 
             

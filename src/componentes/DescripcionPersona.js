@@ -22,10 +22,9 @@ const DescripcionPersona = () => {
                         </div>
                         <div className="card-body">
                             <p className="text-muted">
-                                Hola! Mi nombre es Gabriel Lazzarini, soy un programador Full Stack y actualmente estudio Ingeniería en Informática en la Universidad Nacional del Litoral. <br></br>
-                                Además soy Técnico en Informática, trabajé 2 años de forma independiente y  realicé una pasantía en el sector informático del hospital
-                                José María Cullen de la ciudad de Santa Fe. <br />
-                                Actualmente me dedico a investigar, estudiar y practicar Desarrollo de Software Frontend y Backend con JavaScript y TypeScript. 
+                                Hola! Hago desarrollo de software full-stack de manera autodidacta y curso mis estudios superiores en la ciudad de Santa Fe (Arg.)  <br></br>
+                                Poseo 2 años de experiencia laboral en el área <br />
+                                Actualmente me dedico a mejorar continuamente mis habilidades como desarrollador investigando-estudiando-practicando diversas tecnologías de frontend, backend y bases de datos como:  Java, JavaScript, React js, Next js, Angular, MySQL, MongoDB. 
                             </p>
                         </div>
                     </div>
