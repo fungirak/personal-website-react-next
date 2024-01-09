@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import swal from 'sweetalert';
 import Banda from './helpers/Banda';
 
-import { FormControlLabel } from '@mui/material';
-import { Checkbox } from "@mui/material";
+// Reemplazar estos dos componentes que generan inconscistencias entre las versiones de react/next/mui.
+// import { FormControlLabel } from '@mui/material';
+// import { Checkbox } from "@mui/material";
 
 
 const Contacto = () => {
@@ -197,12 +198,14 @@ const Contacto = () => {
         </div>
 
      
+      {/*  REEMPLAZAR COMPONENTE (INCONSISTENCIA DE VERSIONES ENTRE TECNOLOGÍAS)
 
         <FormControlLabel 
           control={<Checkbox defaultChecked={boolPoliticas} color="success" onChange={handlePoliticas}/>} 
           label="Acepto la Política de Privacidad" 
           className="mb-3"
         />
+        */}
 
           <div className="row col s12 text-center">
           <button className={`btn waves-effect waves-light ${ boolPoliticas ? 'bg-primary' : 'disabled' }`} type="submit" disabled={!boolCompleto}  >

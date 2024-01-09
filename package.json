@@ -11,9 +11,6 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@mui/core": "^5.0.0-alpha.54",
-    "@mui/material": "^5.15.3",
-    "@mui/styled-engine-sc": "^6.0.0-alpha.11",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.2",
     "firebase": "^9.6.10",
