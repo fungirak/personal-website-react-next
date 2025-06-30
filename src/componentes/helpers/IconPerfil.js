@@ -1,20 +1,22 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
-const IconPerfil = ({pos, logo, ruta}) => {
-  return <div>
-      <>
-      <li className="nav efecto m-1 animate__animated animate__fadeInUp animate__delay-1s">
-         
-            <Link to={ruta}>
-                <button className="m-1 bg-transparent border border-0 efecto" onClick={pos} >
-                    <img src={logo} className="icon-pres  p-2" alt="..." />
-                </button>
-            </Link>
-        
+const IconPerfil = ({ pos, logo, ruta, className, style, imageStyle }) => {
+  return (
+    <>
+     
+      <li className={`nav efecto m-1 animate__animated animate__fadeInUp animate__delay-1s ${className || ''}`} style={style}>
+        <a 
+          href={ruta} 
+          onClick={pos} 
+          className="bg-transparent border border-0 efecto" 
+          style={{ display: 'block', padding: '0', cursor: 'pointer' }} 
+        >
+          
+          <img src={logo} className="icon-pres p-2" alt="..." style={imageStyle} />
+        </a>
       </li>
-      </>
-  </div>;
+    </>
+  );
 };
 
 export default IconPerfil;
