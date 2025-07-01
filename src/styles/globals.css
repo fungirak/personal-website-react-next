@@ -491,7 +491,7 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
 .skills-marquee-row {
     display: flex;
     white-space: nowrap;
-    animation: marquee-scroll 60s linear infinite;
+    animation: marquee-scroll 10s linear infinite;
     will-change: transform;
     padding: 0.5rem 0;
 }
@@ -501,8 +501,8 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
     content: attr(data-skills); 
     display: inline-flex;
     white-space: nowrap;
-    animation: marquee-scroll 60s linear infinite;
-    animation-delay: -30s;
+    animation: marquee-scroll 10s linear infinite;
+    animation-delay: 10s;
 }
 
 
@@ -514,15 +514,15 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
 /* Media query para ajustar la velocidad en pantallas más pequeñas si es necesario */
 @media (max-width: 768px) {
     .skills-marquee-row {
-        animation: marquee-scroll 20s linear infinite;
+        animation: marquee-scroll 10s linear infinite;
     }
     .skills-marquee-row::after {
-        animation: marquee-scroll 20s linear infinite;
-        animation-delay: -20s;
+        animation: marquee-scroll 10s linear infinite;
+        animation-delay: -2s;
     }
 }
 
-/* Ajustes a la clase skill-tag para el estilo de "pill" neomórfico */
+
 .skill-tag {
     display: inline-block;
     background-color: var(--neomorph-base-dark);
@@ -594,4 +594,101 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
 }
 .Logoskills-as-pill:hover p {
     color: var(--contrast-electric-green); 
+}
+
+
+/* --- GLOBAL.CSS - Nuevas Clases para Video de Fondo --- */
+
+/* Contenedor del video de fondo */
+.video-background-container {
+    position: relative; /* Necesario para posicionar el iframe dentro */
+    width: 100vw;
+    height: 400px; /* Ajusta la altura según lo necesites para "media altura" */
+    overflow: hidden;
+    margin-bottom: 2rem; /* Espacio debajo del video */
+    pointer-events: none; /* Permite clicks a través del contenedor si no hay overlay visible */
+}
+
+/* iframe del video de YouTube */
+.video-background-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100%; /* Ajusta para cubrir completamente el contenedor */
+    transform: translate(-50%, -50%); /* Centra el video */
+    object-fit: cover; /* Asegura que el video cubra el área sin distorsión */
+    min-width: 100%;
+    min-height: 100%;
+    pointer-events: none; /* No interactuable por defecto */
+}
+
+/* Overlay para hacer el video clickeable */
+.video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Capa semi-transparente para oscurecer el video */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Transición para el hover */
+    pointer-events: auto; /* Hace que el overlay sea interactuable */
+    z-index: 1; /* Asegura que el overlay esté sobre el video */
+}
+
+.video-background-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Menos oscuro al pasar el ratón */
+}
+
+.video-background-play-icon {
+    font-size: 4rem; /* Tamaño del icono de play */
+    color: rgba(255, 255, 255, 0.8); /* Color del icono de play */
+    text-shadow: 0 0 15px rgba(0, 248, 160, 0.8); /* Brillo verde sutil */
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.video-background-overlay:hover .video-background-play-icon {
+    color: var(--contrast-electric-green); /* Verde eléctrico al pasar el ratón */
+    text-shadow: 0 0 20px var(--contrast-electric-green), 0 0 40px rgba(0, 248, 160, 0.5);
+    transform: scale(1.1);
+}
+
+/* Asegurar que la foto de perfil esté por encima del video de fondo */
+.foto-perfil-z-index {
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 2; /* Mayor que el overlay del video (z-index: 1) */
+}
+
+
+:root {
+    --neomorph-out-shadow: 8px 8px 16px var(--neomorph-dark-shadow), -8px -8px 16px var(--neomorph-light-shadow);
+    --neomorph-border-color: transparent; 
+}
+
+
+
+.foto-perfil {
+    height: 12em;
+    width: 12em;  
+    border-radius: 50%; 
+    object-fit: cover;
+    object-position: 10% 40%;
+   
+    border: 8px solid var(--contrast-electric-green) !important; 
+    box-shadow: 0 0 10px rgba(0, 248, 160, 0.8), 
+                0 0 20px rgba(0, 248, 160, 0.4); 
+   
+}
+
+
+.neomorph-card-image-border {
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px var(--contrast-electric-green),
+        0 0 40px rgba(15, 73, 53, 0.5);
+   
 }

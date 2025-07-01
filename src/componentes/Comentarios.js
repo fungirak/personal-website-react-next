@@ -108,7 +108,7 @@ const Comentarios = () => {
     }, []);
 
     return (
-        <div className="full-width-section" style={{ marginBottom: '2rem' }}>
+        <div className="" style={{ marginBottom: '2rem' }}>
             <div className="neomorph-out-element p-4" style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <h3 className="text-center fw-normal neomorph-out-element text-electric-green section-title-glow" 
                     style={{ marginBottom: '0.5rem', fontSize: '1.5rem', padding: '0.6rem 1rem', borderRadius: '12px', maxWidth: '250px', margin: '0 auto' }}>

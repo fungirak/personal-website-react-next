@@ -6,7 +6,6 @@ import Modal from 'react-modal';
 import Portada from './Portada'; 
 import AboutMe from './sections/AboutMe';
 import MyJourney from './sections/MyJourney';
-import StudiesAndCertifications from './sections/StudiesAndCertifications';
 import Portfolio from './sections/Portfolio';
 import ContactAndPolicies from './sections/ContactAndPolicies'; 
 
@@ -43,8 +42,7 @@ export default function App() {
             <MyJourney />
             <div className="espacio spacing-lg"></div> 
 
-            <StudiesAndCertifications />
-            <div className="espacio spacing-lg"></div> 
+           
 
             <Portfolio />
             <div className="espacio spacing-lg"></div> 
