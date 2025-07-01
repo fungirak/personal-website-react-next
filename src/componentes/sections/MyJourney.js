@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import Image from 'next/image';
 
 import utnLogo from '../../../public/img/update/LogoUTN.png';
-import unlLogo from '../../../public/img/LogoUNL.png'; 
+import unlLogo from '../../../public/img/logoUNL.png'; 
 import logoGobiernoSantaFe from '../../../public/img/logoGobiernoSantaFe.png';
 
 
