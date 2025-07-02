@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'; 
-import Modal from 'react-modal'; 
+import React, { useState, useEffect } from 'react';
+import Modal from 'react-modal';
 import Image from 'next/image';
 
 import utnLogo from '../../../public/img/update/LogoUTN.png';
-import unlLogo from '../../../public/img/logoUNL.png'; 
+import unlLogo from '../../../public/img/logoUNL.png';
 import logoGobiernoSantaFe from '../../../public/img/logoGobiernoSantaFe.png';
 
 
@@ -15,11 +15,11 @@ import logoSeguridad from '../../../public/img/update/certif-seguridad.jpg';
 
 
 const MyJourney = () => {
-    
+
     const [certModalIsOpen, setCertModalIsOpen] = useState(false);
     const [currentCertImage, setCurrentCertImage] = useState(null);
 
-    
+
     useEffect(() => {
         Modal.setAppElement('body');
     }, []);
@@ -110,7 +110,7 @@ const MyJourney = () => {
         style={{ objectFit: 'cover', width: '100%', height: '100%' }}
     />
 </div>
-                           
+                            
                             <div style={{ flexGrow: 1 }}>
                                 <h4 className="text-electric-green" style={{ margin: '0', fontSize: '1.1rem' }}>Software Developer</h4>
                                 <p style={{ color: 'var(--text-medium-gray)', margin: '0', fontSize: '0.9rem' }}>SECRETARÍA DE TECNOLOGÍAS PARA LA GESTIÓN</p>
@@ -150,10 +150,10 @@ const MyJourney = () => {
                     {/* Primer bloque de educación: UTN (Actual) */}
                     <div className="neomorph-out-element neomorph-glow-highlight p-3" style={{ backgroundColor: 'var(--neomorph-base-dark)', marginBottom: '0.8rem' }}>
                         <div className="d-flex align-items-center mb-1">
-                            <div className="list-item-neomorph-icon" style={{
+                            <div className="list-item-neomorph-icon-education" style={{
                                 width: '4em',
                                 height: '4em',
-                                borderRadius: '50%',
+                                // Eliminamos borderRadius aquí porque lo moveremos al CSS global
                                 overflow: 'hidden',
                                 display: 'flex',
                                 justifyContent: 'center',
@@ -176,10 +176,10 @@ const MyJourney = () => {
                     {/* Segundo bloque de educación: UNL */}
                     <div className="neomorph-out-element p-3" style={{ backgroundColor: 'var(--neomorph-base-dark)', marginTop: '0.8rem' }}>
                         <div className="d-flex align-items-center mb-1">
-                            <div className="list-item-neomorph-icon" style={{
+                            <div className="list-item-neomorph-icon-education" style={{
                                 width: '4em',
                                 height: '4em',
-                                borderRadius: '50%',
+                                // Eliminamos borderRadius aquí
                                 overflow: 'hidden',
                                 display: 'flex',
                                 justifyContent: 'center',
@@ -201,10 +201,10 @@ const MyJourney = () => {
                     {/* Tercer bloque de educación */}
                     <div className="neomorph-out-element p-3" style={{ backgroundColor: 'var(--neomorph-base-dark)', marginTop: '0.8rem' }}>
                         <div className="d-flex align-items-center mb-1">
-                            <div className="list-item-neomorph-icon" style={{
+                            <div className="list-item-neomorph-icon-education" style={{
                                 width: '4em',
                                 height: '4em',
-                                borderRadius: '50%',
+                                // Eliminamos borderRadius aquí
                                 overflow: 'hidden',
                                 display: 'flex',
                                 justifyContent: 'center',
@@ -239,10 +239,10 @@ const MyJourney = () => {
                                 onClick={() => openCertModal(logoYoProgramo.src)}
                             >
                                 <div style={{
-                                    width: '100%', 
-                                    height: '10em', 
+                                    width: '100%',
+                                    height: '10em',
                                     overflow: 'hidden',
-                                    borderRadius: '8px', 
+                                    borderRadius: '8px',
                                     marginBottom: '0.5rem',
                                     boxShadow: 'inset 5px 5px 10px var(--neomorph-dark-shadow), inset -5px -5px 10px var(--neomorph-light-shadow)',
                                     background: 'var(--neomorph-base-dark)'
@@ -250,9 +250,9 @@ const MyJourney = () => {
                                     <Image
                                         src={logoYoProgramo}
                                         alt="Certificación Yo Programo - Argentina Programa"
-                                        width={200} 
-                                        height={160} 
-                                        style={{ objectFit: 'cover', width: '100%', height: '100%' }} 
+                                        width={200}
+                                        height={160}
+                                        style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                                     />
                                 </div>
                                 <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -364,7 +364,7 @@ const MyJourney = () => {
                     <h3 className="fw-bold text-electric-green section-title-glow">Reconocimientos y Premios</h3>
                     <div className="p-3" style={{ backgroundColor: 'var(--neomorph-base-dark)' }}>
                         <div className="d-flex align-items-center mb-1">
-                           
+                            
                             <div style={{ flexGrow: 1 }}>
                                 <h4 className="text-electric-green" style={{ marginBottom: '0.5rem', margin: '0', fontSize: '1rem' }}>DIPLOMA DE HONOR</h4>
                                 <p style={{ color: 'var(--text-medium-gray)', margin: '0', fontSize: '0.9rem' }}>Colegio Profesional de Maestros Mayores de Obras y Técnicos de la Arquitectura, Industria e Ingeniería de Santa Fe · dic. 2017</p>
@@ -398,7 +398,7 @@ const MyJourney = () => {
                     </div>
                 </div>
             </div>
-           
+            
             <Modal
                 isOpen={certModalIsOpen}
                 onRequestClose={closeCertModal}
@@ -415,8 +415,8 @@ const MyJourney = () => {
                         border: 'none',
                         borderRadius: '15px',
                         padding: '1rem',
-                        maxWidth: '90%', 
-                        maxHeight: '90vh', 
+                        maxWidth: '90%',
+                        maxHeight: '90vh',
                         overflow: 'auto',
                         display: 'flex',
                         flexDirection: 'column',
@@ -426,7 +426,7 @@ const MyJourney = () => {
                     },
                     overlay: {
                         backgroundColor: 'rgba(0, 0, 0, 0.95)',
-                        zIndex: 1000 
+                        zIndex: 1000
                     }
                 }}
             >
@@ -441,7 +441,7 @@ const MyJourney = () => {
                         fontSize: '2.5rem',
                         color: 'var(--text-light-gray)',
                         cursor: 'pointer',
-                        zIndex: 1001 
+                        zIndex: 1001
                     }}
                 >
                     &times;
@@ -452,7 +452,7 @@ const MyJourney = () => {
                         alt="Certificado en Modal"
                         style={{
                             maxWidth: '100%',
-                            maxHeight: '80vh', 
+                            maxHeight: '80vh',
                             objectFit: 'contain',
                             borderRadius: '10px'
                         }}

@@ -92,7 +92,7 @@ const Portada = () => {
                         className="burbuja-flotante neomorph-floating-bubble animate__animated animate__bounceInDown border border-3"
                         width={40}
                         height={40}
-                        style={{ marginTop: '13em' }} // Aquí se añade el margen superior
+                        style={{ marginTop: '19.3em' }} // Aquí se añade el margen superior
                     />
                 </div>
 

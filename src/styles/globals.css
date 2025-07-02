@@ -615,52 +615,52 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
     top: 50%;
     left: 50%;
     width: 100vw;
-    height: 100%; /* Ajusta para cubrir completamente el contenedor */
-    transform: translate(-50%, -50%); /* Centra el video */
-    object-fit: cover; /* Asegura que el video cubra el área sin distorsión */
+    height: 100%;
+    transform: translate(-50%, -50%); 
+    object-fit: cover; 
     min-width: 100%;
     min-height: 100%;
-    pointer-events: none; /* No interactuable por defecto */
+    pointer-events: none; 
 }
 
-/* Overlay para hacer el video clickeable */
+
 .video-background-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Capa semi-transparente para oscurecer el video */
+    background: rgba(0, 0, 0, 0.4); 
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease; /* Transición para el hover */
-    pointer-events: auto; /* Hace que el overlay sea interactuable */
-    z-index: 1; /* Asegura que el overlay esté sobre el video */
+    transition: background-color 0.3s ease; 
+    pointer-events: auto; 
+    z-index: 1; 
 }
 
 .video-background-overlay:hover {
-    background-color: rgba(0, 0, 0, 0.2); /* Menos oscuro al pasar el ratón */
+    background-color: rgba(0, 0, 0, 0.2); 
 }
 
 .video-background-play-icon {
-    font-size: 4rem; /* Tamaño del icono de play */
-    color: rgba(255, 255, 255, 0.8); /* Color del icono de play */
-    text-shadow: 0 0 15px rgba(0, 248, 160, 0.8); /* Brillo verde sutil */
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 15px rgba(0, 248, 160, 0.8);
     transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .video-background-overlay:hover .video-background-play-icon {
-    color: var(--contrast-electric-green); /* Verde eléctrico al pasar el ratón */
+    color: var(--contrast-electric-green); 
     text-shadow: 0 0 20px var(--contrast-electric-green), 0 0 40px rgba(0, 248, 160, 0.5);
     transform: scale(1.1);
 }
 
-/* Asegurar que la foto de perfil esté por encima del video de fondo */
+
 .foto-perfil-z-index {
-    position: relative; /* Necesario para que z-index funcione */
-    z-index: 2; /* Mayor que el overlay del video (z-index: 1) */
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -693,15 +693,15 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
    
 }
 
-/* Nueva clase para iconos circulares con tamaño responsivo */
+
 .circular-icon-container {
-    /* Define un tamaño base usando vw o una unidad relativa al viewport */
-    width: 6vw; /* 6% del ancho del viewport */
-    height: 6vw; /* Mantener la misma unidad para asegurar el cuadrado */
-    max-width: 96px; /* Limita el tamaño máximo para desktop (si 6em = 96px) */
-    max-height: 96px; /* Limita el tamaño máximo para desktop */
-    min-width: 60px; /* Tamaño mínimo para móvil para que no sea demasiado pequeño */
-    min-height: 60px; /* Tamaño mínimo para móvil */
+    
+    width: 6vw; 
+    height: 6vw; 
+    max-width: 96px; 
+    max-height: 96px; 
+    min-width: 60px; 
+    min-height: 60px;
     
     border-radius: 50%;
     overflow: hidden;
@@ -713,12 +713,51 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
     background: var(--neomorph-base-dark);
 }
 
-/* Para ajustar el tamaño en móvil si 6vw es demasiado grande/pequeño */
+
 @media (max-width: 768px) {
     .circular-icon-container {
-        width: 15vw; /* Más grande en porcentaje para pantallas pequeñas */
+        width: 15vw; 
         height: 15vw;
-        min-width: 80px; /* Asegura un tamaño mínimo aceptable */
+        min-width: 80px; 
         min-height: 80px;
     }
+}
+
+
+
+.list-item-neomorph-icon-education {
+    width: 4em; 
+    height: 4em; 
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    box-shadow: inset 5px 5px 10px var(--neomorph-dark-shadow), inset -5px -5px 10px var(--neomorph-light-shadow);
+    background: var(--neomorph-base-dark);
+    flex-shrink: 0; 
+}
+
+
+.circular-icon-container {
+    position: relative;
+    width: 4em; 
+    height: 4em; 
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    box-shadow: inset 5px 5px 10px var(--neomorph-dark-shadow), inset -5px -5px 10px var(--neomorph-light-shadow);
+    background: var(--neomorph-base-dark);
+    flex-shrink: 0;
+}
+
+.circular-icon-container img {
+    display: block; 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
