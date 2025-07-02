@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 
 import fotoPerfil from '../../public/img/fotoPerfil.jpg';
-import logoPoster from '../../public/img/logoPoster.png';
 import logoColaboracion from '../../public/img/logoColaboracion.png';
 import LogoUTN from '../../public/img/update/LogoUTN.png';
 
