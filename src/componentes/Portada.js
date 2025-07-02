@@ -73,26 +73,27 @@ const Portada = () => {
                         style={{ alignItems: 'center' }}
                     >
                         <img src={logoColaboracion.src} alt="colaborar" className="logoColab me-2" />
-                        <span className="fw-bold" style={{ color: 'var(--bg-dark-neomorph)' }}>COLABORAR</span>
+                        <span className="fw-bold" style={{ color: 'var(--bg-dark-neomorph)' }}>Ayudar</span>
                     </a>
                 </div>
 
 
-               <div className="d-flex justify-content-center" style={{ marginTop: '7.3em', marginLeft: '2.2em', zIndex: 90 }}>
+               <div className="d-flex justify-content-center" style={{ marginTop: '0em', marginLeft: '2.2em', zIndex: 90 }}>
                     <Image
                         src={fotoPerfil}
                         alt="Foto de Perfil de Gabriel"
-                        className="foto-perfil neomorph-profile-picture efecto" // Aquí está la clase "foto-perfil"
-                        width={200}
-                        height={200}
-                        style={{ objectFit: 'cover' }}
+                        className="foto-perfil neomorph-profile-picture efecto" 
+                        width={150}
+                        height={150}
+                        style={{ objectFit: 'cover', marginTop: '12.5em' }}
                     />
                     <Image
                         src={LogoUTN}
                         alt="Logo UTN"
-                        className="burbuja-flotante neomorph-floating-bubble animate__animated animate__bounceInDown"
-                        width={50}
-                        height={50}
+                        className="burbuja-flotante neomorph-floating-bubble animate__animated animate__bounceInDown border border-3"
+                        width={40}
+                        height={40}
+                        style={{ marginTop: '13em' }} // Aquí se añade el margen superior
                     />
                 </div>
 

@@ -90,7 +90,7 @@ const MyJourney = () => {
                         </li>
                         <br />
                         <li style={{ marginBottom: '0.5rem', color: 'var(--text-medium-gray)', fontSize: '0.9rem', lineHeight: '1.4' }} className="neomorph-out-element p-3">
-                            <span className="text-electric-green">• 🍀 Proyección e Influencia:</span> Mi plan a futuro es proyectar una influencia creciente y positiva a través de la confianza en la tecnología aplicada socialmente para resolver problemas reales. Busco inspirar, educar y contribuir a una comunidad tecnológica que evolucione constantemente y se mantenga fiel al compromiso de que la tecnología está creada para resolver problemas. No para crearlos.
+                            <span className="text-electric-green">• 🍀 Proyección e Influencia:</span> Mi plan a futuro es proyectar una influencia creciente y positiva a través de la confianza tecnológica. Aplicada socialmente para resolver problemas reales. Busco inspirar, educar y contribuir a una comunidad que evolucione constantemente y se mantenga fiel al compromiso de que la tecnología está creada para resolver problemas. No para crearlos.
                         </li>
                         <br />
                     </ul>
@@ -101,27 +101,15 @@ const MyJourney = () => {
                     <h3 className="fw-bold text-electric-green section-title-glow">Experiencia Laboral</h3>
                     <div className="neomorph-out-element p-3" style={{ marginBottom: '1rem', backgroundColor: 'var(--neomorph-base-dark)' }}>
                         <div className="d-flex align-items-center mb-1">
-                            <div className="list-item-neomorph-icon" style={{
-                                width: '6em',
-                                height: '6em',
-                                borderRadius: '50%',
-                                overflow: 'hidden',
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                marginRight: '1rem',
-                                boxShadow: 'inset 5px 5px 10px var(--neomorph-dark-shadow), inset -5px -5px 10px var(--neomorph-light-shadow)',
-                                background: 'var(--neomorph-base-dark)'
-                            }}>
-                                <Image
-                                    src={logoGobiernoSantaFe}
-                                    alt="Logo Gobierno de Santa Fe"
-                                    width={96}
-                                    height={96}
-                                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                                />
-                            </div>
-
+                           <div className="list-item-neomorph-icon circular-icon-container">
+    <Image
+        src={logoGobiernoSantaFe}
+        alt="Logo Gobierno de Santa Fe"
+        width={96} // Define un width/height base para Next.js
+        height={96}
+        style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+    />
+</div>
                            
                             <div style={{ flexGrow: 1 }}>
                                 <h4 className="text-electric-green" style={{ margin: '0', fontSize: '1.1rem' }}>Software Developer</h4>

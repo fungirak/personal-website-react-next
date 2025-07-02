@@ -67,7 +67,7 @@ a:active {
 .icon-pres { width: 3.5em; height: 3.5em; }
 .icon-sm { width: 1.5em; height: 1.5em; }
 .logo-sm { width: 2.5em; height: 2.5em; border-radius: 10px; }
-.logoColab { width: 2em; height: 2em; }
+.logoColab { width: 2em; height: 1.5em; }
 .logo-xsm { width: 1.5em; height: 1.5em; margin-right: .5em; border-radius: 10px; background: white; }
 .logo-card { width: 4em; height: 4em; margin-left: .5em; }
 .logo-card-php { width: 6em; height: 4em; margin-left: .5em; }
@@ -691,4 +691,34 @@ textarea.materialize-textarea.neomorph-input-field { min-height: 80px; line-heig
         0 0 20px var(--contrast-electric-green),
         0 0 40px rgba(15, 73, 53, 0.5);
    
+}
+
+/* Nueva clase para iconos circulares con tamaño responsivo */
+.circular-icon-container {
+    /* Define un tamaño base usando vw o una unidad relativa al viewport */
+    width: 6vw; /* 6% del ancho del viewport */
+    height: 6vw; /* Mantener la misma unidad para asegurar el cuadrado */
+    max-width: 96px; /* Limita el tamaño máximo para desktop (si 6em = 96px) */
+    max-height: 96px; /* Limita el tamaño máximo para desktop */
+    min-width: 60px; /* Tamaño mínimo para móvil para que no sea demasiado pequeño */
+    min-height: 60px; /* Tamaño mínimo para móvil */
+    
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    box-shadow: inset 5px 5px 10px var(--neomorph-dark-shadow), inset -5px -5px 10px var(--neomorph-light-shadow);
+    background: var(--neomorph-base-dark);
+}
+
+/* Para ajustar el tamaño en móvil si 6vw es demasiado grande/pequeño */
+@media (max-width: 768px) {
+    .circular-icon-container {
+        width: 15vw; /* Más grande en porcentaje para pantallas pequeñas */
+        height: 15vw;
+        min-width: 80px; /* Asegura un tamaño mínimo aceptable */
+        min-height: 80px;
+    }
 }

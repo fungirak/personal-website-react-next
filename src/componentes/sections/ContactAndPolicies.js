@@ -256,7 +256,6 @@ const ContactAndPolicies = ({ posicionar, policyModalIsOpen, policyModalHandler 
                             <ul style={{ paddingLeft: '0' }}>
                                 <li><a href="#about-me-section" onClick={(e) => { e.preventDefault(); posicionar(document.getElementById('about-me-section').offsetTop); }} style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>Acerca de Mí</a></li>
                                 <li><a href="#my-journey-section" onClick={(e) => { e.preventDefault(); posicionar(document.getElementById('my-journey-section').offsetTop); }} style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>Trayectoria y Visión</a></li>
-                                <li><a href="#studies-certifications-section" onClick={(e) => { e.preventDefault(); posicionar(document.getElementById('studies-certifications-section').offsetTop); }} style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>Estudios y Certificaciones</a></li>
                                 <li><a href="#skills-section" onClick={(e) => { e.preventDefault(); posicionar(document.getElementById('skills-section').offsetTop); }} style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>Skills</a></li>
                                 <li><a href="#portfolio-section" onClick={(e) => { e.preventDefault(); posicionar(document.getElementById('portfolio-section').offsetTop); }} style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>Portafolio</a></li>
                                 <li><a href="#contact-section" onClick={(e) => { e.preventDefault(); posicionar(document.getElementById('contact-section').offsetTop); }} style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>Contacto</a></li>
@@ -293,7 +292,7 @@ const ContactAndPolicies = ({ posicionar, policyModalIsOpen, policyModalHandler 
                 
                 <div className="row">
                     <div className="col-12 text-center footer-bottom-text" style={{ paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                        <p style={{ fontSize: '0.8rem', marginBottom: '0.3rem' }}>&copy; {new Date().getFullYear()} Gabriel Lazzarini. Todos los derechos reservados.</p>
+                        <p style={{ fontSize: '0.8rem', marginBottom: '0.3rem' }}>&copy; {new Date().getFullYear()}🍄 Gabriel Lazzarini. Todos los derechos reservados.</p>
                         <p style={{ fontSize: '0.8rem', marginBottom: '0' }}>Diseñado y desarrollado con pasión por FUNGIRAK</p>
                     </div>
                 </div>
